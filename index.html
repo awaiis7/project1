@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>responsive Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .first {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 5% 0;
+        }
+
+        .item1 {
+            background-image: url(women_product/image.jpg);
+            width: 330px;
+            height: 380px;
+            background-size: cover;
+            position: relative;
+        }
+
+        .item2 {
+            background-image: url(women_product/image1.jpg);
+            width: 330px;
+            height: 180px;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .item3 {
+            background-image: url(women_product/image2.jpg);
+            width: 330px;
+            height: 180px;
+            background-size: cover;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .contents {
+            position: absolute;
+            top: 80%;
+            left: 70%;
+        }
+
+        .item1:hover .contents {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            font-size: 30px;
+            transition-duration: 1s;
+
+        }
+
+        .contents2 {
+            position: absolute;
+            top: 20%;
+            left: 70%;
+        }
+
+        .item2:hover .contents2 {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            font-size: 30px;
+            transition-duration: 1s;
+
+
+        }
+
+        .item3:hover .contents2 {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            font-size: 30px;
+            transition-duration: 1s;
+
+        }
+
+        @media only screen and (max-width:576px) {
+            .first {
+                flex-direction: column;
+                text-align: center;
+                padding-left: 20%;
+                box-sizing: border-box;
+                width: 100%;
+
+            }
+
+
+        }
+
+        @media only screen and (max-width:576px) {
+            .Latest {
+                flex-direction: column;
+
+            }
+        }
+
+        @media only screen and (max-width:576px) {
+            .latest1 {
+                margin: 0 30%;
+                box-sizing: border-box;
+
+            }
+        }
+
+
+        .second {
+            background-color: rgb(223, 218, 218);
+            text-align: center;
+            padding-top: 3%;
+
+        }
+
+        .Latest {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 3%;
+        }
+
+        .latest1 {
+            width: 220px;
+            height: 230px;
+            transition: all 0.4s;
+        }
+
+        .latest1 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .News {
+            background-color: #fff;
+            padding: 10px 0;
+            margin-top: -1%;
+        }
+
+        .latest1:hover {
+            box-shadow: 8px 8px silver;
+
+        }
+
+        @media only screen and (max-width:576px) {
+            .third {
+                text-align: center;
+                box-sizing: border-box;
+
+            }
+        }
+
+        .third {
+            padding: 3%;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:576px) {
+            .last {
+                flex-direction: column;
+                margin-left: 30%;
+
+            }
+        }
+
+        .last {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-bottom: 3%;
+        }
+
+        .outlet {
+            position: relative;
+            background-image: url(collection/image.jpg);
+            background-size: cover;
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .tags {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 1s;
+            padding: 42% 24%;
+            left: -100%;
+
+        }
+
+        .tags i {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .outlet:hover .tags {
+            left: 0%;
+        }
+
+        .outlet1 {
+            position: relative;
+            background-image: url(collection/image1.jpg);
+            background-size: cover;
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .tags1 {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 1s;
+            padding: 42% 24%;
+            left: 100%;
+
+        }
+
+        .tags1 i {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .outlet1:hover .tags1 {
+            left: 0%;
+        }
+
+        .outlet2 {
+            position: relative;
+            background-image: url(collection/image2.jpg);
+            background-size: cover;
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .tags2 {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 1s;
+            padding: 42% 24%;
+
+            top: -100%;
+
+        }
+
+        .tags2 i {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+
+        }
+
+        .outlet2:hover .tags2 {
+
+            top: 0%;
+        }
+
+        .outlet3 {
+            position: relative;
+            background-image: url(collection/image3.jpg);
+            background-size: cover;
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .tags3 {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 1s;
+            padding: 42% 24%;
+
+            top: 100%;
+
+        }
+
+        .tags3 i {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+
+        }
+
+        .outlet3:hover .tags3 {
+
+            top: 0%;
+        }
+
+        .outlet4 {
+            position: relative;
+            background-image: url(collection/image4.jpg);
+            background-size: cover;
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .tags4 {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 1s;
+            padding: 42% 24%;
+            left: -100%;
+            top: -100%;
+
+        }
+
+        .tags4 i {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+
+        }
+
+        .outlet4:hover .tags4 {
+            left: 0%;
+            top: 0%;
+        }
+
+        .outlet5 {
+            position: relative;
+            background-image: url(collection/image5.jpg);
+            background-size: cover;
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .tags5 {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 1s;
+            padding: 42% 24%;
+            left: 100%;
+            top: 100%;
+
+        }
+
+        .tags5 i {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+
+        }
+
+        .outlet5:hover .tags5 {
+            left: 0%;
+            top: 0%;
+        }
+
+        @media only screen and (max-width:576px) {
+            .fourth {
+                flex-direction: column;
+
+            }
+        }
+
+        .fourth {
+            background-color: rgb(214, 214, 214);
+        }
+
+
+        .more {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: grey;
+        }
+
+        .less {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: grey;
+        }
+
+        @media only screen and (max-width:576px) {.section10{
+        width: 100%;
+    }
+}
+
+
+        .section10 {
+            width: 60%;
+            margin: auto;
+        }
+
+        .section10 .location :first-child {
+            text-align: center;
+            color: #1B85EA;
+            font-size: 50px;
+            margin: 20px 0px 20px 0px;
+
+        }
+        @media only screen and (max-width:576px){ .section10-child{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+        .section10-child {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .email a {
+            text-decoration: none;
+            color: #1B85EA;
+        }
+        @media only screen and(max-width:576px) { .email .emailimg{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+       
+        }
+            
+        }
+
+        .email .emailimg {
+            width: 420px;
+            height: 350px;
+            margin-top: 20px;
+        }
+
+        .map {
+            margin-top: 20px;
+        }
+
+        .emailimg img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .phone a {
+            text-decoration: none;
+            color: #1B85EA;
+        }
+
+        .section11 {
+            background-color: rgb(196, 192, 192);
+            padding: 50px 0px 50px 0px;
+            margin-top: 50px;
+        }
+        @media only screen and(max-width:576px){  .section11-child{
+            width: 90%;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+           
+        }
+    }
+
+        .section11-child {
+            width: 60%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+
+        }
+        @media only screen and(max-width:576px){ .section11-child .child1{
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+        .section11-child .child1 {
+            width: 40%;
+        }
+        @media only screen and(max-width:576px){ .child1 .childlogo{
+            width: 120px;
+            height: 60px;
+            margin: auto;
+        }
+}
+
+        .child1 .childlogo {
+            width: 120px;
+            height: 60px;
+        }
+
+        .childlogo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .child1 i {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+            color: #1B85EA;
+            margin: 10px 10px 0px 0px;
+        }
+
+        .childlogo+p {
+            color: rgb(83, 81, 81);
+            margin-bottom: 20px;
+        }
+
+        .child2 li {
+            list-style: none;
+            margin-top: 10px;
+            color: rgb(83, 81, 81);
+        }
+
+        .child3 li {
+            list-style: none;
+            margin-top: 10px;
+            color: rgb(83, 81, 81);
+            color: rgb(83, 81, 81);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <div class="item1">
+            <div class="contents">
+                <h4 style="color: #1277D4;">Item 1</h4>
+                <h4 style="color: white;font-weight: 300;">Buy now</h4>
+
+            </div>
+        </div>
+        <div class="item2-3">
+            <div class="item2">
+                <div class="contents2">
+                    <h4 style="color: #1277D4;">Item 2</h4>
+                    <h4 style="color: white;font-weight: 300;">Buy now</h4>
+                </div>
+            </div>
+            <div class="item3">
+                <div class="contents2">
+                    <h4 style="color: #1277D4;">Item 3</h4>
+                    <h4 style="color: white;font-weight: 300;">Buy now</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <h2 style="color: #1277D4;font-weight: 500;font-size: 35px;">
+            Latest News
+        </h2>
+        <div class="Latest">
+            <div class="latest1">
+                <img src="latest_news/open.jpg" alt="">
+                <div class="News">
+                    <h3>
+                        Work Mode
+                    </h3>
+                    <p style="color: #1277D4;">
+                        Learn More
+                    </p>
+                </div>
+
+            </div>
+            <div class="latest1">
+                <img src="latest_news/image1.jpg" alt="">
+                <div class="News">
+                    <h3>
+                        New collections
+                    </h3>
+                    <p style="color: #1277D4;">
+                        Learn More
+                    </p>
+                </div>
+
+            </div>
+            <div class="latest1">
+                <img src="latest_news/moncler.jpg" alt="">
+                <div class="News">
+                    <h3>
+                        Our stores
+                    </h3>
+                    <p style="color: #1277D4;">
+                        Learn More
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="third">
+        <h1 style="color: #1277D4;font-weight: 300;">
+            LAST COLLECTION
+        </h1>
+        <p style="padding-top: 2%;">
+            Learn More
+        </p>
+    </div>
+    <div class="last">
+        <div class="outlet">
+            <div class="tags">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+        </div>
+        <div class="outlet1">
+            <div class="tags1">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="outlet2">
+            <div class="tags2">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="last">
+        <div class="outlet3">
+            <div class="tags3">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+        </div>
+        <div class="outlet4">
+            <div class="tags4">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="outlet5">
+            <div class="tags5">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+        </div>
+    </div>
+    <div class="fourth">
+        <div class="fourth heading" style="text-align: center;padding: 3% 0;">
+            <h1 style="color: #1277D4;font-weight: 200;font-size: 40px;">
+                Testimonials
+            </h1>
+
+        </div>
+        <div class="profile" style="text-align: center;">
+            <img src="collection/image.jpg" alt="" style="width: 50px;height: 50px;border-radius: 50%;">
+            <h4 style="padding: 1% 0;">
+                Markus Grecho
+            </h4>
+            <p style="color: grey;">
+                Client
+            </p>
+        </div>
+        <div class="para" style="display: flex;justify-content: center;gap: 80px;padding: 3% 0;">
+            <div class="less">
+                <i class="fa-solid fa-less-than fa-2xs" style="color: #1277D4;"></i>
+
+            </div>
+            <div class="middle" style="text-align: center;">
+                <p style="color: grey;line-height: 150%;">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia alias
+                    <br>
+                    pariatur eos earum et. Minima recusandae incidunt non. Voluptatibus
+                    <br>
+                    nisi odit animi. Officia, inventore perferendis quaerat suscipit veri
+                    <br>
+                    tatis illo! Rerum.incidunt non. Volupta tibus
+                </p>
+
+            </div>
+            <div class="more">
+                <i class="fa-solid fa-less-than fa-2xs fa-flip-horizontal" style="color: #1277D4;"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section10">
+        <div class="location">
+            <p>Our location</p>
+        </div>
+        <div class="section10-child">
+            <div class="email">
+                <p><b>Email</b></p>
+                <a href="">company@mobirise.com</a>
+                <div class="emailimg">
+                    <img src="location/cloths.jpg" alt="">
+                </div>
+            </div>
+            <div class="phone">
+                <p><b>Phone</b></p>
+                <a href="">+1234 567 890</a>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435519.22738700226!2d74.00473102724722!3d31.48310366631069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1698676592796!5m2!1sen!2s"
+                        width="420px" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section11">
+        <div class="section11-child">
+            <div class="child1">
+                <div class="childlogo">
+                    <img src="logo.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ipsa temporibus totam laboriosam
+                    eos atque dolore ipsam delectus? Asperiores doloremque soluta recusandae excepturi cupiditate fugiat
+                    esse eius ipsum earum </p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+            <div class="child2">
+                <h3>News</h3>
+                <ul>
+                    <li>Trends</li>
+                    <li>Sales</li>
+                    <li>Discounts</li>
+                    <li>Best Proposals</li>
+                </ul>
+            </div>
+            <div class="child3">
+                <h3>Shop</h3>
+                <ul>
+                    <li>Best jeans in town</li>
+                    <li>Best jeans in town</li>
+                    <li>Best jeans in town</li>
+                    <li>Best jeans in town</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
